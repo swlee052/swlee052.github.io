@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import DarkModeSwitch from './components/darkMode.switch';
+import { DarkModeSwitch } from './components/darkMode.switch';
 import SocialMediaRibbon from './components/socialMedia.ribbon';
 import MenuBarRibbon from './components/menuBar.ribbon';
 import ScrollUpButton from './components/scrollUp.button';
-import TranslateButton from './components/translate.button';
+import LanguageSpeedDial from './components/language.button';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <LanguageSpeedDial/>
     <DarkModeSwitch/>
     <MenuBarRibbon/>
     <SocialMediaRibbon/>
-    <TranslateButton/>
     <App />
     <ScrollUpButton/>
   </React.StrictMode>

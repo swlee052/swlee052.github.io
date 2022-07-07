@@ -1,13 +1,17 @@
-import * as React from 'react';
+import { Link } from 'react-scroll';
 //https://icons8.com/icon/set/email/doodle
 
 export default function ScrollUpButton() {
   return (
-    <div>
-      <a href="#top">
-        <img src="https://img.icons8.com/doodle/96/000000/up--v1.png"/>
-      </a>
-    </div>
+    <span className='scroll-up'>
+      <Link 
+        to="darkmode-switch"
+        smooth duration={1000}>
+          <a href='#top'>
+            <img src="https://img.icons8.com/doodle/96/000000/up--v1.png" alt='scroll-up'/>
+          </a>
+      </Link>
+    </span>
   );
 }
 
