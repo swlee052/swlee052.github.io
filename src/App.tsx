@@ -1,9 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MenuBarRibbon from './components/menuBar.ribbon';
+import ScrollUpButton from './components/scrollUp.button';
+import SocialMediaRibbon from './components/socialMedia.ribbon';
+import ConfigRow from './components/config.row';
 
 function App() {
   return (
+    <React.StrictMode>
+    <ConfigRow/>
+    <MenuBarRibbon/>
+    <SocialMediaRibbon/>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,6 +28,8 @@ function App() {
         </a>
       </header>
     </div>
+    <ScrollUpButton/>
+    </React.StrictMode>
   );
 }
 
