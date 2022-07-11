@@ -60,7 +60,7 @@ export function DarkModeSwitch() {
   return (
     <FormControlLabel className='darkmode-switch'
       control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked /> }
-      label={darkMode ? 'Dark Mode': 'Light Mode'}
+      label={darkMode ? 'Dark': 'Light'}
       onClick={handleClick}
       checked={darkMode}
     />
