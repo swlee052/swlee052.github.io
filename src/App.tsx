@@ -1,20 +1,21 @@
 import React from 'react';
 import './App.css';
-import MenuBar from './components/menu.bar';
+// import MenuSideBar from './components/menu.sidebar';
 import ScrollUpButton from './components/scrollUp.button';
-import SocialMediaRibbon from './components/socialMedia.ribbon';
+import SocialMediaNavBar from './components/socialMedia.navBar';
 import ConfigRow from './components/config.row';
-import favicon from './assets/favicon.png';
+import MenuButton from './components/menu.button';
 
 function App() {
   return (
   <React.StrictMode>
-  <div className="App">
+  <div className="App" id="outer-container">
     <header className="App-header">
-    <ConfigRow />
-    <MenuBar />
-    <SocialMediaRibbon />
-    <ScrollUpButton />
+      <MenuButton />
+      <ConfigRow />
+      {/* <MenuSideBar /> */}
+      <SocialMediaNavBar />
+      <ScrollUpButton />
     </header>
   </div>
   </React.StrictMode>
