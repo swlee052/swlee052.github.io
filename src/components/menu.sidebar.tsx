@@ -1,12 +1,11 @@
 //https://icons8.com/icon/set/email/doodle
-import { slide as Menu } from 'react-burger-menu';
+import { Props, slide as Menu } from 'react-burger-menu';
 
-export default function MenuSideBar() {
+export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Menu> & Readonly<Props>) => {
   return (
-    <Menu>
+    <Menu {...props}>
       <a className="menu-item" href="/" rel="noreferrer">
-        <img src="https://img.icons8.com/doodle/96/000000/home--v1.png" alt='home' />
-        Home
+        <img src="https://img.icons8.com/doodle/96/000000/home--v1.png" alt='home'/>
       </a>
       <a className="menu-item" href="mailto:swlee052@gmail.com" target="_blank" rel="noreferrer">
         <img src="https://img.icons8.com/doodle/96/000000/i-pronoun.png" />
