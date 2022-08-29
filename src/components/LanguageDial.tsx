@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import styled from 'styled-components';
 
 function LanguageButton() {
   return (
@@ -30,7 +29,7 @@ const actions = [
 
 export default function LanguageSpeedDial() {
   return (
-    <Box sx={{ position: 'fixed', margin: 'auto', top: 16, right: 16, width: 96, height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+    <Box sx={{ position: 'fixed', margin: 'auto', top: 16, right: 16, width: 96, height: 320, transform: 'translateZ(0px)'}}>
       <SpeedDial
         ariaLabel="Language Button Speed Dial"
         sx={{ position: 'absolute', top: 16, right: 16 }}

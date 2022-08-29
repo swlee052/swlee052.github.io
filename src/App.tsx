@@ -1,22 +1,16 @@
 import React from 'react';
 import './App.css';
-// import MenuSideBar from './components/menu.sidebar';
-import ScrollUpButton from './components/scrollUp.button';
-import SocialMediaNavBar from './components/socialMedia.navBar';
-import ConfigRow from './components/config.row';
-import MenuButton from './components/menu.button';
-import SideBar from './components/menu.sidebar';
+import DarkModeSwitch from './components/darkmode/DarkMode';
+import NavBar from './components/navbar/NavBar';
+import ScrollUpButton from './components/ScrollUpButton';
 
 function App() {
   return (
   <React.StrictMode>
-  {/* <div className="App" id="outer-container"> */}
-    <MenuButton />
-    <ConfigRow />
-    <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"}/>
-    <SocialMediaNavBar />
+    {/* <LanguageSpeedDial /> */}
+    <DarkModeSwitch />
+    <NavBar />
     <ScrollUpButton />
-  {/* </div> */}
   </React.StrictMode>
   );
 }
