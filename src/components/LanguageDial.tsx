@@ -29,7 +29,7 @@ const actions = [
 
 export default function LanguageSpeedDial() {
   return (
-    <Box sx={{ position: 'fixed', margin: 'auto', top: 16, right: 16, width: 96, height: 320, transform: 'translateZ(0px)'}}>
+    <Box sx={{ position: 'fixed', margin: 'auto', top: 16, right: 16, width: 96, height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
       <SpeedDial
         ariaLabel="Language Button Speed Dial"
         sx={{ position: 'absolute', top: 16, right: 16 }}

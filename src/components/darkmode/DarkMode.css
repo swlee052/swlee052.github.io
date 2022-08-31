@@ -21,7 +21,9 @@ a {
 
 .toggle-theme-wrapper {
   display: flex;
-  flex-direction: row;
+  position: fixed;
+  right: 10px;
+  top: 10px;
   align-items: center;
   gap: 4px;
 }

@@ -1,0 +1,8 @@
+export const CREDITS_BUTTON_IMAGE_URL = "https://img.icons8.com/doodle/96/000000/scroll.png"
+export const GITHUB_BUTTON_IMAGE_URL = "https://img.icons8.com/doodle/96/000000/github--v1.png"
+export const LINKEDIN_BUTTON_IMAGE_URL = "https://img.icons8.com/doodle/96/000000/linkedin--v2.png"
+export const EMAIL_BUTTON_IMAGE_URL = "https://img.icons8.com/doodle/96/000000/new-post.png"
+export const RESUME_BUTTON_IMAGE_URL = "https://img.icons8.com/doodle/96/000000/pdf--v3.png"
+export const PROJECTS_BUTTON_IMAGE_URL = "https://img.icons8.com/doodle/96/000000/console--v2.png"
+export const WORK_EXPERIENCE_BUTTON_IMAGE_URL = "https://img.icons8.com/doodle/96/000000/business.png" 
+export const HOME_BUTTON_IMAGE_URL = "https://img.icons8.com/doodle/96/000000/home--v1.png" 

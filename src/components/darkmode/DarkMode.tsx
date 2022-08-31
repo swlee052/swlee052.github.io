@@ -12,7 +12,7 @@ const prefersDarkMode = window.matchMedia
 const storedTheme = localStorage.getItem("theme");
 const defaultDark = storedTheme === "dark" || prefersDarkMode;
 
-function DarkModeSwitch() {
+function DarkMode() {
   const [darkMode, setDarkMode] = React.useState(defaultDark ? true : false);
   setTheme(darkMode);
   function handleClick(){
@@ -36,4 +36,4 @@ function DarkModeSwitch() {
   );
 };
 
-export default DarkModeSwitch;
+export default DarkMode;

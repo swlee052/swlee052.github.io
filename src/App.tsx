@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import DarkModeSwitch from './components/darkmode/DarkMode';
-import NavBar from './components/navbar/NavBar';
+import DarkMode from './components/DarkMode/DarkMode';
+import NavBar from './components/NavBar/NavBar';
 import ScrollUpButton from './components/ScrollUpButton';
 
 function App() {
   return (
   <React.StrictMode>
     {/* <LanguageSpeedDial /> */}
-    <DarkModeSwitch />
+    <DarkMode />
     <NavBar />
     <ScrollUpButton />
   </React.StrictMode>

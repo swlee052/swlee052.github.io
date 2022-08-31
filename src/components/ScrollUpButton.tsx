@@ -1,3 +1,4 @@
+import Tooltip from '@mui/material/Tooltip';
 import styled from 'styled-components';
 
 const scrollUpImgUrl = "https://img.icons8.com/doodle/96/000000/up--v1.png"
@@ -13,10 +14,10 @@ function scrollToTop() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-function ScrollUpButton() {
+export default function ScrollUpButton() {
   return (
-    <ScrollUp src={scrollUpImgUrl} alt='menu-button' onClick={scrollToTop} />
+    <Tooltip title="Scroll Up" placement="left">
+      <ScrollUp src={scrollUpImgUrl} alt='menu-button' onClick={scrollToTop} />
+    </Tooltip>
   );
 }
-
-export default ScrollUpButton;
