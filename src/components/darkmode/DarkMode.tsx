@@ -1,4 +1,4 @@
-import './DarkMode.css'
+import './darkmode.css'
 import React from "react";
 
 function setTheme(darkMode: boolean) {
