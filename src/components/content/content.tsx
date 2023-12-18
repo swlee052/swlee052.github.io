@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
-import { aboutMeMdPath, educationMdPath, experienceMdPath, projectsMdPath } from './content.constants';
+import { aboutMeMdPath, educationMdPath, experienceMdPath, projectsMdPath, 
+  skillsMdPath, creditsMdPath } from './content.constants';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
@@ -26,6 +27,8 @@ export default function Content() {
   const [experienceText, setExperienceText] = useState('');
   const [educationText, setEducationText] = useState('');
   const [projectsText, setProjectsText] = useState('');
+  const [skillsText, setSkillsText] = useState('');
+  const [creditsText, setCreditsText] = useState('');
 
   useEffect(() => {
     readMdFile(aboutMeMdPath).then(text => {
@@ -39,6 +42,12 @@ export default function Content() {
     })
     readMdFile(projectsMdPath).then(text => {
       setProjectsText(text)
+    })
+    readMdFile(skillsMdPath).then(text => {
+      setSkillsText(text)
+    })
+    readMdFile(creditsMdPath).then(text => {
+      setCreditsText(text)
     })
   }, []); // The empty dependency array means this effect runs once after the initial render
 
@@ -58,6 +67,13 @@ export default function Content() {
         />
       </div>
 
+      <div id='projects'>
+        <ReactMarkdown
+          children={projectsText}
+          className='content-container'
+        />
+      </div>
+
       <div id='education'>
         <ReactMarkdown
           children={educationText}
@@ -65,9 +81,16 @@ export default function Content() {
         />
       </div>
 
-      <div id='projects'>
+      <div id='skills'>
         <ReactMarkdown
-          children={projectsText}
+          children={skillsText}
+          className='content-container'
+        />
+      </div>
+
+      <div id='credits'>
+        <ReactMarkdown
+          children={creditsText}
           className='content-container'
         />
       </div>

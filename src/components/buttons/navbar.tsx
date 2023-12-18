@@ -1,6 +1,10 @@
 import Tooltip from "@mui/material/Tooltip";
 import { StyledScrollToButton } from "./scroll-to-button";
-import { CREDITS_BUTTON_IMAGE_URL, EDUCATION_BUTTON_IMAGE_URL, EMAIL_BUTTON_IMAGE_URL, EMAIL_URL, GITHUB_BUTTON_IMAGE_URL, GITHUB_URL, ABOUT_ME_BUTTON_IMAGE_URL, LINKEDIN_BUTTON_IMAGE_URL, LINKEDIN_URL, PROJECTS_BUTTON_IMAGE_URL, RESUME_BUTTON_IMAGE_URL, WORK_EXPERIENCE_BUTTON_IMAGE_URL } from "./buttons.constants";
+import { CREDITS_BUTTON_IMAGE_URL, EDUCATION_BUTTON_IMAGE_URL, 
+  EMAIL_BUTTON_IMAGE_URL, EMAIL_URL, GITHUB_BUTTON_IMAGE_URL, GITHUB_URL,
+  ABOUT_ME_BUTTON_IMAGE_URL, LINKEDIN_BUTTON_IMAGE_URL, LINKEDIN_URL, 
+  PROJECTS_BUTTON_IMAGE_URL, RESUME_BUTTON_IMAGE_URL, 
+  WORK_EXPERIENCE_BUTTON_IMAGE_URL, RESUME_PDF_URL } from "./buttons.constants";
 import styled from "styled-components";
 
 // handlers
@@ -37,6 +41,18 @@ function openInNewTab(url: string): void {
 
 const onClickUrl = (url: string): (() => void) => () => openInNewTab(url)
 
+function handleResumeClick() {
+  try {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = RESUME_PDF_URL;
+    downloadLink.download = 'sungwoo_lee_resume.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  } catch (error) {
+    console.error('Error downloading resume:', error);
+  }
+}
 
 
 // Styles
@@ -91,6 +107,7 @@ export default function NavBar() {
       <Tooltip arrow={true} placement="right" title={<h2>Resume</h2>}>
         <StyledScrollToButton
           src={RESUME_BUTTON_IMAGE_URL}
+          onClick={handleResumeClick}
         />
       </Tooltip>
       <Tooltip arrow={true} placement="right" title={<h2>Email</h2>}>

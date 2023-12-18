@@ -14,3 +14,6 @@ export const EDUCATION_BUTTON_IMAGE_URL = "./icons/icons8-books-96.png"
 export const LINKEDIN_URL = "https://www.linkedin.com/in/swlee052/"
 export const GITHUB_URL = "https://github.com/swlee052"
 export const EMAIL_URL = "mailto:swlee052@gmail.com"
+
+// files
+export const RESUME_PDF_URL = "./sungwoo_lee_resume.pdf"
