@@ -2,8 +2,8 @@
   "name": "sungwoo-lee-portfolio",
   "version": "0.1.0",
   "description": "Sungwoo Lee's portfolio website",
+  "homepage": "https://swlee052.github.io/react-gh-pages",
   "private": true,
-  "homepage": "https://swlee052.github.io",
   "repository": "https://github.com/swlee052/swlee052.github.io",
   "author": "Sungwoo Lee <swlee052@gmail.com>",
   "license": "MIT",
@@ -38,7 +38,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b deploy -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
